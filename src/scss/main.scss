@@ -1,0 +1,120 @@
+body {
+  padding: 1.5rem 0;
+  font-family: "Rethink Sans";
+  &::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    opacity: 0.6;
+
+    background-image: url("/assets/img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-variant-caps: small-caps;
+}
+
+i {
+  font-size: 0.8em;
+  color: #aaa;
+  letter-spacing: 0.4px;
+}
+
+.apresenta {
+  text-align: center;
+
+  h1 {
+    font-family: "Alike Angular";
+    // text-transform: uppercase;
+    font-variant-caps: small-caps;
+    // span {
+    //   font-size: 0.8em;
+    // }
+  }
+}
+
+audio {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.conhece {
+  text-align: center;
+  font-variation-settings: "wght" 550;
+  h1 {
+    margin: 1rem 0;
+    font-size: 1.25rem;
+  }
+
+  .album-cover {
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+  }
+}
+
+ol {
+  li {
+    margin: 0 0 2rem;
+    // position: relative;
+
+    .title {
+      // display: flex;
+      // align-items: center;
+      // gap: 2rem;
+    }
+    .links {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      img {
+        $icon_size: 25px;
+        cursor: pointer;
+        height: $icon_size;
+        width: $icon_size;
+        object-fit: contain;
+
+        transition: transform 0.2s;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    .row {
+      // gap: 2rem;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+    pre {
+      display: flex;
+      gap: 3rem;
+      font-family: inherit;
+      flex-wrap: wrap;
+    }
+
+    .streaming {
+      font-size: 0.9rem;
+      font-variation-settings: "wght" 500;
+    }
+    .copyright {
+      font-size: 0.8rem;
+      color: #bbb;
+    }
+  }
+}
+
+@media all and (max-width: 1400px) {
+}
